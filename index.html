@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="jquery.js"></script>
-    <script src="data_generator.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,700" rel="stylesheet">
+    <title>Twittler</title>
   </head>
   <body>
-    <script>
+    <div class="headerBar">
+      <header>
+        <a class="titleLink" href="#">
+          <h1 class="title">Twittler</h1>
+        </a>
+      </header>
+    </div>
 
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
-
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
-
-      });
-
-    </script>
+    <section id="tweetsFrom"></section>
+    <section id="middleBar"></section>
+    <section id="writeTweet" class="text-center">
+      <div>
+        <label for="visitorName" class="usernameLabel">Username</label>
+        <br>
+        <input type="text" id="visitorName" class="visitorBox" name= "Visitor Tweet"></input>
+      </div>
+      <div class="tweetleDiv">
+        <label for="tweetleText" class="tweetleLabel">Tweetle</label>
+        <br>
+        <input type="text" id="tweetleText" name= "Visitor Tweet"></input>
+      </div>
+      <div class="writeTweetButton">
+        <a href="#" class="writeTweet postTweetle">Post Tweetle</a>
+      </div>
+    </section>
+    <section id="tweetBody"></section>
+    
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="data_generator.js"></script>
+    <script src="jquery.timeago.js"></script>
   </body>
 </html>
