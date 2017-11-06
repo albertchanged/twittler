@@ -1,0 +1,173 @@
+body {
+	font-family: Open Sans;
+	margin: 0 auto;
+	width: 85%;
+}
+
+/* Shared button styles */
+.refreshFeed, .writeTweetle {
+	font-weight: 600;
+	text-decoration: none;
+	border-radius: 10px;
+	float: right;
+	vertical-align: middle;
+  font-size: 1.25em;
+  display: inline-block;
+}
+
+
+/* HEADER */
+.headerBar {
+	background-color: white;
+}
+.imgStyle {
+	width: 4%;
+	padding-right: 1%;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+.title {
+	text-align: center;
+	font-size: 4em;
+	color: #01A9DB;
+	margin-bottom: 20px;
+	margin-top: 25px;
+	font-weight: 600;
+	font-family: Libre Franklin;
+}
+.titleLink {
+	text-decoration: none;
+}
+
+
+/*MIDDLE BAR*/
+#middleBar {
+	background-color: #E6E6E6;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+.tweetsFromEveryone, .tweetsFromUser {
+	vertical-align: middle;
+	padding-left: 20px;
+	display: inline-block;
+	font-size: 1.5em;
+}
+.refreshFeed {
+	border: 3px solid #01A9DB;
+	background-color: white;
+	color: #01A9DB;
+	padding: 9px 15px;
+  margin-top: 12px;
+  margin-right: 20px;
+}
+.refreshFeed:hover, .refreshFeed:active {
+	border-color: #0595C1;
+	color: #0595C1;
+}
+.writeTweetle {
+	background-color: #01A9DB;
+	border: 1.5px solid #01A9DB;
+	color: white;
+	padding: 10px 15px;
+  margin-top: 12px;
+  margin-right: 20px;
+}
+.writeTweetle:hover, .writeTweetle:active, .postTweetle:hover, .postTweetle:focus {
+	background-color: #069ECD;
+	border-color: #069ECD;
+}
+.postTweetle {
+	border-radius: 10px;
+	font-size: 1.25em;
+}
+.writeATweet {
+	vertical-align: middle;
+	padding-left: 20px;
+	display: inline-block;
+	font-size: 1.5em;
+}
+#writeTweet {
+	padding: 20px;
+	padding-bottom: 37.5px;
+	background-color: #FFFBB0;
+}
+.writeTweet {
+	background-color: #01A9DB;
+	font-weight: 600;
+	color: white;
+	text-decoration: none;
+	padding: 9px 15px;
+	border-radius: 8px;
+	vertical-align: middle;
+  margin-top: 50px;
+  font-size: 1.25em;
+}
+
+
+/* WRITE NEW TWEETLE */
+#visitorName, #tweetleText {
+	margin-top: 0.5%;
+	font-size: 1em;
+	padding-left: 0.5%;
+	border: 4px solid #E0E0E0;
+}
+.usernameLabel, .tweetleLabel {
+	font-size: 1.5em;
+	color: #7C7C7C;
+	font-family: Libre Franklin;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+.tweetleDiv {
+	padding-top: 1.5%;
+}
+.writeTweetButton {
+	padding-top: 2.5%;
+}
+input {
+	width: 50%;
+	height: 25px;
+}
+.inputError, .usernameError {
+	font-size: 0.5em;
+	color: #FF5757;
+	margin-top: 5px;
+	margin-bottom: -25px;
+}
+.posted {
+	background-color: #FFFBB0;
+	margin-bottom: 0px;
+	padding: 10px;
+}
+
+
+/*TWEET BODY*/
+.tweetBody {
+	padding: 20px;
+	margin-top: 0px;
+	border-top: 1px dotted #01A9DB;
+	border-bottom: 1px dotted #01A9DB;
+	background-color: white;
+}
+.tweetBody:hover {
+	background-color: #E0F2F7;
+}
+.username {
+	text-decoration: none;
+	font-weight: 700;
+	color: #01A9DB;
+}
+.username:hover, .username:focus {
+	color: #0595C1;
+}
+.messageText {
+	padding-top: 0.75%;
+	font-size: 22.5px;
+	font-weight: 400;
+}
+.timestamp {
+	float: right;
+	font-size: 1em;
+	padding-top: 0.5%;
+}
