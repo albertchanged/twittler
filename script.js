@@ -104,13 +104,13 @@ $(document).ready(function(){
     // Toggle the "Write New Tweetle" section
     if ($writeTweet.css('display') === 'block') {
       $writeTweet.slideUp();
-      $('.tweetsFromEveryone').css('opacity', '1');
-      $('.tweetsFromUser').css('opacity', '1');
+      $('.tweetsFromEveryone').css({'font-size': '1.5em', 'opacity' : '1'});
+      $('.tweetsFromUser').css({'font-size': '1.5em', 'opacity' : '1'});
     } else {
       $writeTweet.slideDown();
       $writeATweet.prependTo($middleBar);
-      $('.tweetsFromEveryone').css('opacity', '0');
-      $('.tweetsFromUser').css('opacity', '0');
+      $('.tweetsFromEveryone').css({'font-size': '0.5em', 'opacity' : '0'});
+      $('.tweetsFromUser').css({'font-size': '0.5em', 'opacity' : '0'});
     }
   });
 
